@@ -7,7 +7,7 @@ on:
     paths-ignore:
       - '*.txt'
       - '*.md'
-      - !requirements.txt
+      - '!requirements.txt'
   workflow_dispatch:
 
 jobs:
