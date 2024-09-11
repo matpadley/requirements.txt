@@ -1,1 +1,22 @@
+name: Write Time to Console
 
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '*.txt'
+      - '*.md'
+      - !requirements.txt
+  workflow_dispatch:
+
+jobs:
+  write-time:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Write current time to console
+      run: echo "Current time: $(date)"
