@@ -19,4 +19,4 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Write current time to console
-      run: echo "Current time: $(date)"
+      run: echo "Current time"
